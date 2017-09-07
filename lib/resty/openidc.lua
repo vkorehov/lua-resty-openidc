@@ -853,7 +853,7 @@ function openidc.jwt_verify(access_token, opts, ...)
     json = cjson.decode(v)
   end
 
-  local slack=opts.iat_slack and opts.iat_slack or 120
+  local slack=opts.iat_slack and opts.iat_slack or 600
   -- check the token expiry
   if json then
     if json.exp and json.exp + slack < ngx.time() then
