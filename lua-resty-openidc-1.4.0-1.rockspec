@@ -1,8 +1,7 @@
 package = "lua-resty-openidc"
 version = "1.4.0-1"
 source = {
-    url = "git://github.com/pingidentity/lua-resty-openidc",
-    tag = "v1.4.0",
+    url = "git://github.com/vkorehov/lua-resty-openidc",
     dir = "lua-resty-openidc"
 }
 description = {
